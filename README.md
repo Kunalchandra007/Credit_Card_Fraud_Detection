@@ -123,6 +123,8 @@ Models trained on SMOTE-balanced data perform better at fraud detection.
 
 Random Forest and XGBoost performed robustly.
 
+Made with ❤️ By Kunal
+
 Deep learning gave strong recall but needs careful tuning.
 
 DBSCAN successfully flagged outliers (unsupervised fraud detection).
