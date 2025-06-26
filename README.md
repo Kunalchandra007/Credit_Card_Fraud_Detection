@@ -82,3 +82,49 @@ python
 model.save("fraud_dl_model.keras")
 loaded_model = tf.keras.models.load_model("fraud_dl_model.keras")
 ```
+📈 Evaluation Metrics
+Accuracy
+
+Precision, Recall, F1-Score
+
+ROC-AUC Score
+
+Confusion Matrix
+
+Focused on maximizing recall to minimize false negatives (missed frauds).
+
+📦 Installation
+```bash
+git clone https://github.com/yourusername/CreditCardFraudDetection.git
+cd CreditCardFraudDetection
+pip install -r requirements.txt
+```
+
+📄 requirements.txt
+Typical packages (to be listed in your requirements.txt):
+``` bash
+nginx
+pandas
+numpy
+scikit-learn
+xgboost
+matplotlib
+seaborn
+imbalanced-learn
+tensorflow
+keras
+streamlit
+joblib
+Generate it with:
+pip freeze > requirements.txt
+```
+📌 Results & Insights
+Models trained on SMOTE-balanced data perform better at fraud detection.
+
+Random Forest and XGBoost performed robustly.
+
+Deep learning gave strong recall but needs careful tuning.
+
+DBSCAN successfully flagged outliers (unsupervised fraud detection).
+
+
