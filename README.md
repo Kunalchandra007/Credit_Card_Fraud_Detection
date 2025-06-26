@@ -67,3 +67,18 @@ This project is a full pipeline for detecting fraudulent credit card transaction
 pip install -r requirements.txt
 streamlit run app.py
 ```
+🧠 Training & Model Saving
+Trained models and scalers are saved using:
+
+python
+```bash
+import joblib
+joblib.dump(model, 'model_name.pkl')
+model = joblib.load('model_name.pkl')
+Deep learning model:
+```
+python
+```bash
+model.save("fraud_dl_model.keras")
+loaded_model = tf.keras.models.load_model("fraud_dl_model.keras")
+```
